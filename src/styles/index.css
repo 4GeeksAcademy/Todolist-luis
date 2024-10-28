@@ -1,12 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* 
+body {
+    background-color: gainsboro;
+    margin-top: 100px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+#app {
+  background-color: aquamarine;
+  border-radius: 10px;
+  border: aqua solid 2px;
+  width: 500px;
+  padding: 10px;
+  margin: auto;
+}
+.todo-list-container {
+    max-width: 400px;
+    margin-top: 100px;
+    margin: auto;
+    text-align: center;
+  }
 
-*/
+  h1 {
+    color: rgb(152, 93, 93);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tarea-item {
+    position: relative;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .eliminar-icon {
+    display: none;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .tarea-item:hover .eliminar-icon {
+    display: inline;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .mensaje-lista-vacia {
+    font-style: italic;
+    color: rgb(152, 93, 93);
+  }
+  
